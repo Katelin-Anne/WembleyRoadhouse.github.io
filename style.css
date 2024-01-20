@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap);
+html {
+  color: aliceblue;
+  --s: 500px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+     calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+  background-size: var(--s) calc(var(--s)*0.577);
+}
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+}
+main h1{
+  font-size: 80px;
+  margin: 20px;
+}
+main p{
+  font-size: 30px;
+  margin: 40px;
+  font-family: 'Encode Sans', sans-serif;
+}
+main img{
+  width: 800px;
+  margin: 40px;
+  border-radius: 20px;
+}
+aside{
+  width: min(450px, 100%);
+  min-height: 100dvh;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: rgb(26, 26, 27);
+  font-family: 'Martian Mono', monospace;
+}
+aside ul{
+  list-style-type: none;
+}
+nav a{
+  font-size: 50px;
+  color: aliceblue;
+  text-decoration: none;
+}
+nav li{
+  margin: 60px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
